@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/output"
+        android:gravity="right"
+        android:padding="5dp"
+        android:textColor="#504F4F"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        android:gravity="right"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="90dp" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#101010"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/letter_c"
+                android:visibility="invisible"
+
+                />
+
+            <ImageView
+                android:id="@+id/c"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/letter_c" />
+
+            <ImageView
+                android:id="@+id/mod"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/modulation" />
+
+            <ImageView
+                android:id="@+id/division"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/slash" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/seven"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/seven"
+
+                />
+
+            <ImageView
+                android:id="@+id/eight"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/eight" />
+
+            <ImageView
+                android:id="@+id/nine"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/number_9" />
+
+            <ImageView
+                android:id="@+id/multiply"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/remove" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/four"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+
+                android:src="@drawable/four" />
+
+            <ImageView
+                android:id="@+id/five"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/number_5" />
+
+            <ImageView
+                android:id="@+id/six"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/six__1_" />
+
+            <ImageView
+                android:id="@+id/minus"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/minus_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+
+                android:src="@drawable/round" />
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/two" />
+
+            <ImageView
+                android:id="@+id/three"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/number_3" />
+
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/four"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/zero"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/zero" />
+
+            <ImageView
+                android:id="@+id/dot"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/dot" />
+
+            <ImageView
+                android:id="@+id/equal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/bg"
+                android:src="@drawable/equal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
